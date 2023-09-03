@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  vwiki:
+    container_name: "vwiki"
+    hostname: "vwiki"
+    build: .
+    restart: always
+    tty: true
+    volumes:
+      - ..:/workspace:cached
