@@ -1,30 +1,40 @@
 "use client";
 
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import Character from "./character";
 import data from "./data.json";
 
+const Order = {
+  ASC: "asc",
+  DESC: "desc",
+};
+type Order = (typeof Order)[keyof typeof Order];
+
 const SORT = [
-  { key: "id-desc", value: "IDの昇順" },
-  { key: "id-ask", value: "IDの降順" },
-  { key: "age-ask", value: "年齢の昇順" },
-  { key: "age-desc", value: "年齢の降順" },
-  { key: "height-ask", value: "身長の昇順" },
-  { key: "height-desc", value: "身長の降順" },
-  { key: "weight-ask", value: "体重の昇順" },
-  { key: "weight-desc", value: "体重の降順" },
+  { key: "id", order: Order.DESC, value: "登録が古い順" },
+  { key: "id", order: Order.ASC, value: "登録が新しい順" },
+  { key: "age", order: Order.DESC, value: "年齢が老けてる順" },
+  { key: "age", order: Order.ASC, value: "年齢が若い順" },
+  { key: "height", order: Order.DESC, value: "身長が高い順" },
+  { key: "height", order: Order.ASC, value: "身長が低い順" },
+  { key: "weight", order: Order.DESC, value: "体重が重い順" },
+  { key: "weight", order: Order.ASC, value: "体重が軽い順" },
 ] as const;
 
 export default function Home() {
-  const [sort, setSort] = useState<string>(SORT[0].key);
+  const [sort, setSort] = useState<string>(SORT[0].value);
 
-  const sortedList = data.characters.sort((a: any, b: any) => {
-    const [key, order] = sort.split("-");
-    if (order === "ask") {
-      return a[key] > b[key] ? -1 : 1;
-    }
-    return a[key] < b[key] ? -1 : 1;
-  });
+  const SortedCharacters = useMemo(() => {
+    const sortedList = data.characters.sort((a: any, b: any) => {
+      const findSort = SORT.find((v) => v.value === sort) ?? SORT[0];
+      if (findSort.order === Order.ASC) {
+        return a[findSort.key] > b[findSort.key] ? -1 : 1;
+      }
+      return a[findSort.key] < b[findSort.key] ? -1 : 1;
+    });
+
+    return sortedList.map((v) => <Character data={v} key={v.id} />);
+  }, [sort]);
 
   return (
     <main className="pb-8">
@@ -37,17 +47,15 @@ export default function Home() {
           value={sort}
           onChange={(e) => setSort(e.target.value)}
         >
-          {SORT.map((v) => (
-            <option key={v.key} value={v.key}>
+          {SORT.map((v, i) => (
+            <option key={i} value={v.value}>
               {v.value}
             </option>
           ))}
         </select>
       </div>
       <div className="flex flex-wrap justify-center gap-4">
-        {sortedList.map((v) => (
-          <Character data={v} key={v.id} />
-        ))}
+        {SortedCharacters}
       </div>
     </main>
   );

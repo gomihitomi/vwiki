@@ -7,9 +7,9 @@
       "birthday": "05/03",
       "position": "Vtuber",
       "comment": "お酒を愛し仕事を憎むVtuber、絵を描くこととインターネットが趣味。",
-      "age": 7,
-      "height": 8,
-      "weight": 7
+      "age": 10,
+      "height": 14,
+      "weight": 11
     },
     {
       "id": 2,
@@ -18,9 +18,9 @@
       "birthday": "05/03",
       "position": "会社員",
       "comment": "元は吾味人美の男体化。今はほぼ吾味人志のアバター。吾味人美とは兄妹。",
-      "age": 5,
+      "age": 8,
       "height": 5,
-      "weight": 4
+      "weight": 5
     },
     {
       "id": 3,
@@ -29,9 +29,9 @@
       "birthday": "05/03",
       "position": "主婦",
       "comment": "吾味人美の平行世界の姿。子供は二人（娘と息子）。趣味はガーデニング。",
-      "age": 2,
-      "height": 7,
-      "weight": 6
+      "age": 4,
+      "height": 13,
+      "weight": 9
     },
     {
       "id": 4,
@@ -40,9 +40,9 @@
       "birthday": "06/07",
       "position": "不審者",
       "comment": "吾味人美の周りにいつの間にか居た謎の人物。資産家という噂がある。",
-      "age": 4,
+      "age": 6,
       "height": 4,
-      "weight": 5
+      "weight": 6
     },
     {
       "id": 5,
@@ -51,7 +51,7 @@
       "birthday": "02/24",
       "position": "犬",
       "comment": "犬。犬に見えない人も居るらしい。",
-      "age": 10,
+      "age": 17,
       "height": 3,
       "weight": 2
     },
@@ -62,7 +62,7 @@
       "birthday": "10/29",
       "position": "シスター",
       "comment": "寂れた教会のシスターだが、その正体は遠い未来から来た高性能サイボーグ。",
-      "age": 9,
+      "age": 16,
       "height": 1,
       "weight": 1
     },
@@ -73,9 +73,9 @@
       "birthday": "04/03",
       "position": "OL",
       "comment": "没落貴族の娘が不完全な死霊術によって復活させられた姿。まぁまぁ臭い。",
-      "age": 1,
-      "height": 10,
-      "weight": 10
+      "age": 2,
+      "height": 16,
+      "weight": 17
     },
     {
       "id": 8,
@@ -84,9 +84,9 @@
       "birthday": "08/30",
       "position": "バイト",
       "comment": "コンビニバイト。 シューゲイザー系のバンドに所属。担当はリードギター。",
-      "age": 8,
-      "height": 6,
-      "weight": 8
+      "age": 14,
+      "height": 8,
+      "weight": 13
     },
     {
       "id": 9,
@@ -95,9 +95,9 @@
       "birthday": "03/21",
       "position": "Vtuber",
       "comment": "存在しないVtuber。中の人は奴隷が回してるアレを回す仕事をしている。",
-      "age": 6,
-      "height": 9,
-      "weight": 9
+      "age": 9,
+      "height": 15,
+      "weight": 15
     },
     {
       "id": 10,
@@ -106,9 +106,86 @@
       "birthday": "09/14",
       "position": "医者",
       "comment": "超常現象能力の研究をしている医者であり、能力者。辛いカレーが好き。",
-      "age": 3,
+      "age": 5,
       "height": 2,
       "weight": 3
+    },
+    {
+      "id": 11,
+      "name": "クソガキ",
+      "kana": "くそがき",
+      "birthday": "11/11",
+      "position": "小学生",
+      "comment": "サッカーとネットが好き。特にボカロが好きだが、友達には言ってない。",
+      "age": 15,
+      "height": 17,
+      "weight": 15
+    },
+    {
+      "id": 12,
+      "name": "サキュバス冴島",
+      "kana": "さきゅばすさえじま",
+      "birthday": "03/30",
+      "position": "不動産営業",
+      "comment": "人間の為になる仕事をすることが好きな悪魔。全く酔えないがお酒が好き。",
+      "age": 3,
+      "height": 5,
+      "weight": 4
+    },
+    {
+      "id": 13,
+      "name": "東の魔女",
+      "kana": "ひがしのまじょ",
+      "birthday": "12/03",
+      "position": "魔女",
+      "comment": "唯一、魔女と呼ばれる存在。世界の生命と文明の7割を無に返したことがある。",
+      "age": 1,
+      "height": 7,
+      "weight": 10
+    },
+    {
+      "id": 14,
+      "name": "安倍",
+      "kana": "あべ",
+      "birthday": "01/15",
+      "position": "学生",
+      "comment": "剣道部副部長。甘い物が好きすぎるので最近は封印している。高田とは親友。",
+      "age": 11,
+      "height": 9,
+      "weight": 8
+    },
+    {
+      "id": 15,
+      "name": "高田",
+      "kana": "たかだ",
+      "birthday": "02/08",
+      "position": "学生",
+      "comment": "帰宅部、夜な夜な面白そうな都市伝説を調べて過ごしている。安倍とは親友。",
+      "age": 11,
+      "height": 11,
+      "weight": 12
+    },
+    {
+      "id": 16,
+      "name": "雨水香織",
+      "kana": "うすいかおるこ",
+      "birthday": "06/15",
+      "position": "OL",
+      "comment": "会社の事務員。趣味でVtuberをやっている。活動内容はお酒関係が多い。",
+      "age": 7,
+      "height": 12,
+      "weight": 14
+    },
+    {
+      "id": 17,
+      "name": "宇都宮都子",
+      "kana": "うつのみやみやこ",
+      "birthday": "07/07",
+      "position": "学生",
+      "comment": "お嬢様学校の剣道部に所属。やる気はあるが天然ボケ、豪快だがビビリな人柄。",
+      "age": 11,
+      "height": 10,
+      "weight": 7
     }
   ]
 }
