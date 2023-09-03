@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { basePath } from "../next.config";
 
 export type Character = {
   id: number;
@@ -17,12 +18,12 @@ export default function Character({ data }: Props) {
   return (
     <div className="w-1/6 min-w-fit flex flex-col items-center gap-2">
       <Image
-        src={`/image/${String(data.id).padStart(4, "0")}.jpg`}
+        src={`${basePath}/image/${String(data.id).padStart(4, "0")}.jpg`}
         width={150}
         height={150}
         alt={`${data.name}の画像`}
         className="border-2 border-black rounded-full"
-      ></Image>
+      />
       <div className="flex flex-col items-center w-56">
         <span className="text-xs">{data.kana}</span>
         <span className="text-lg font-bold leading-4">{data.name}</span>
