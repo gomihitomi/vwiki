@@ -28,8 +28,15 @@ export default function Home() {
 
   return (
     <main className="pb-8">
-      <div className="bg-black p-2 mb-8 sticky top-0">
-        <select value={sort} onChange={(e) => setSort(e.target.value)}>
+      <div className="bg-black p-2 mb-8 sticky top-0 flex justify-between">
+        <h1 className="text-white text-lg font-bold">
+          バーチャルインターネットラクガキマンwiki
+        </h1>
+        <select
+          className="px-1 py-0.5"
+          value={sort}
+          onChange={(e) => setSort(e.target.value)}
+        >
           {SORT.map((v) => (
             <option key={v.key} value={v.key}>
               {v.value}
