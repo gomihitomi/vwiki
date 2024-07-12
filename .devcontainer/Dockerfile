@@ -1,4 +1,4 @@
-FROM node:20.1.0-slim
+FROM node:20.15.1-slim
 
 # https://code.visualstudio.com/remote/advancedcontainers/add-nonroot-user
 ARG USERNAME=node
